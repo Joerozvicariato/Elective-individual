@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #5cb85c; 
+            color: white;
+            padding: 20px;
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        
+        }
+        header img {
+            max-width: 150px; /* Adjust the size of the logo */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 20px; /* Space between logo and title */
+        }
+        header h1 {
+            flex-grow: 1; /* Allow the title to take up available space */
+            text-align: center; /* Center the title text */
+            margin: 0; /* Remove default margin */
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center; /* Center navigation links */
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #5cb85c; /* Link color */
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+        .content {
+            text-align: center;
+            padding: 50px 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="LOGO.jpg" alt="Logo"> <!-- Replace with your logo path -->
+        <h1>Welcome to Our Website!</h1> <!-- Updated welcome message -->
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="content">
+        <h2>Your One-Stop Solution</h2>
+        <p>We provide a variety of services to meet your needs. Explore our website to learn more about what we offer.</p>
+    </div>
+</body>
+</html>
