@@ -3,66 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Shoe Store</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background: linear-gradient(to bottom right, #e0e0e0, #ffffff); 
             margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
         }
         header {
-            background: #5cb85c; 
-            color: white;
+            text-align: center;
             padding: 20px;
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        
+            background-color: rgba(255, 255, 255, 0.9); 
+            position: relative;
         }
         header img {
-            max-width: 150px; /* Adjust the size of the logo */
-            height: auto; /* Maintain aspect ratio */
-            margin-right: 20px; /* Space between logo and title */
-        }
-        header h1 {
-            flex-grow: 1; /* Allow the title to take up available space */
-            text-align: center; /* Center the title text */
-            margin: 0; /* Remove default margin */
+            max-width: 150px; 
+            height: auto; 
         }
         nav {
             margin: 20px 0;
-            text-align: center; /* Center navigation links */
+            text-align: center; 
+        }
+        nav ul {
+            list-style: none;
+            padding: 0; 
+        }
+        nav ul li {
+            display: inline; 
+            margin: 0 15px; 
         }
         nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #5cb85c; /* Link color */
-            font-weight: bold;
+            background-color: #f2f2f2; 
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none; 
+            color: #333; 
         }
         nav a:hover {
-            text-decoration: underline; /* Underline on hover */
+            background-color: #e0e0e0; 
         }
-        .content {
+        main {
+            padding: 20px;
+        }
+        section {
+            background-color: rgba(255, 255, 255, 0.9); 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px; 
+        }
+        .shoe-grid {
+            display: flex;
+            justify-content: space-around; 
+            flex-wrap: wrap; 
+        }
+        .shoe {
+            background-color: #f7f7f7; 
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px;
+            width: calc(33.333% - 20px); 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box; 
+        }
+        .shoe img {
+            width: 100%; 
+            height: 200px; 
+            object-fit: cover; 
+            border-radius: 5px;
+        }
+        footer {
             text-align: center;
-            padding: 50px 20px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.9); 
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="LOGO.jpg" alt="Logo"> <!-- Replace with your logo path -->
-        <h1>Welcome to Our Website!</h1> <!-- Updated welcome message -->
+        <img src="https://i.pinimg.com/originals/c0/2a/14/c02a14ee95c5c32bd8f6bdf02b2a5946.gif" alt="Logo">
+        <h1>Welcome to Shoe Store!</h1>
     </header>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
     </nav>
-    <div class="content">
-        <h2>Your One-Stop Solution</h2>
-        <p>We provide a variety of services to meet your needs. Explore our website to learn more about what we offer.</p>
-    </div>
+    <main>
+        <section id="home">
+            <h1>Welcome to Shoe Store!</h1>
+            <p>Browse our collection of shoes below.</p>
+        </section>
+        <section id="shoes">
+            <h2>Shoes</h2>
+            <div class="shoe-grid">
+                <div class="shoe">
+                    <img src="https://i.pinimg.com/control/564x/df/66/1d/df661d8275b3f48069c5a576ad79e2f9.jpg" alt="Shoe 1">
+                    <h3>Shoe 1</h3>
+                    <p>Price: $100</p>
+                </div>
+                <div class="shoe">
+                    <img src="https://i.pinimg.com/736x/a9/b3/3f/a9b33fcd4866c69e293a1be0f965fae2.jpg" alt="Shoe 2">
+                    <h3>Shoe 2</h3>
+                    <p>Price: $120</p>
+                </div>
+                <div class="shoe">
+                    <img src="https://i.pinimg.com/control/564x/21/09/fe/2109fe7a333cf217d9f06e6c0585c89e.jpg" alt="Shoe 3">
+                    <h3>Shoe 3</h3>
+                    <p>Price: $90</p>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a team of shoe enthusiasts dedicated to providing the best shoes for our customers.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="joerozvicariato287@gmail.com" style="color: #337ab7; text-decoration: none;">info@shoestore.com</a></p>
+            <p>Phone:09300227182</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Shoe Store. All rights reserved.</p>
+    </footer>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js').then(function(registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function(err) {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
 </body>
 </html>
