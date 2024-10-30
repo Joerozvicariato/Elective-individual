@@ -3,97 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shoe Store</title>
+    <title>Shoe Store - Home</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            background: linear-gradient(to bottom right, #e0e0e0, #ffffff); 
-            margin: 0;
-            font-family: Arial, sans-serif;
-            color: #333;
-        }
-        header {
-            text-align: center;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.9); 
-            position: relative;
-        }
-        header img {
-            max-width: 150px; 
-            height: auto; 
-        }
-        nav {
-            margin: 20px 0;
-            text-align: center; 
-        }
-        nav ul {
-            list-style: none;
-            padding: 0; 
-        }
-        nav ul li {
-            display: inline; 
-            margin: 0 15px; 
-        }
-        nav a {
-            background-color: #f2f2f2; 
-            padding: 10px;
-            border-radius: 5px;
-            text-decoration: none; 
-            color: #333; 
-        }
-        nav a:hover {
-            background-color: #e0e0e0; 
-        }
-        main {
-            padding: 20px;
-        }
-        section {
-            background-color: rgba(255, 255, 255, 0.9); 
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px; 
-        }
-        .shoe-grid {
-            display: flex;
-            justify-content: space-around; 
-            flex-wrap: wrap; 
-        }
-        .shoe {
-            background-color: #f7f7f7; 
-            padding: 10px;
-            border-radius: 5px;
-            margin: 10px;
-            width: calc(33.333% - 20px); 
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            box-sizing: border-box; 
-        }
-        .shoe img {
-            width: 100%; 
-            height: 200px; 
-            object-fit: cover; 
-            border-radius: 5px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: rgba(255, 255, 255, 0.9); 
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
 </head>
 <body>
     <header>
         <img src="https://i.pinimg.com/originals/c0/2a/14/c02a14ee95c5c32bd8f6bdf02b2a5946.gif" alt="Logo">
-        <h1>Welcome to Shoe Store!</h1>
+        <h1>Welcome to Shoe  Store!</h1>
     </header>
     <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="highlight.html">New Design Shoes</a></li> 
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
     <main>
@@ -115,35 +38,30 @@
                     <p>Price: $120</p>
                 </div>
                 <div class="shoe">
-                    <img src="https://i.pinimg.com/control/564x/21/09/fe/2109fe7a333cf217d9f06e6c0585c89e.jpg" alt="Shoe 3">
+                    <img src="https://i.pinimg.com/736x/b6/59/80/b659808fb8b92b50bc4b2074dcccf6c7.jpg" alt="Shoe 3">
                     <h3>Shoe 3</h3>
                     <p>Price: $90</p>
                 </div>
+                <div class="shoe">
+                    <img src="https://i.pinimg.com/564x/40/72/34/407234bb8485964fbad4cdcebc04c761.jpg" alt="Shoe 4">
+                    <h3>Shoe 4</h3>
+                    <p>Price: $90</p>
+                </div>
+                <div class="shoe">
+                    <img src="https://i.pinimg.com/564x/47/86/21/478621b93c47eb4e22811b901dd732d0.jpg" alt="Shoe 5">
+                    <h3>Shoe 5</h3>
+                    <p>Price: $120</p>
+                </div>
+                <div class="shoe">
+                    <img src="https://i.pinimg.com/736x/05/bc/dd/05bcdd50350076fb41ba53c45bcbdab9.jpg" alt="Shoe 6">
+                    <h3>Shoe 6</h3>
+                    <p>Price: $120</p>
             </div>
-        </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>We are a team of shoe enthusiasts dedicated to providing the best shoes for our customers.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Email: <a href="joerozvicariato287@gmail.com" style="color: #337ab7; text-decoration: none;">info@shoestore.com</a></p>
-            <p>Phone:09300227182</p>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Shoe Store. All rights reserved.</p>
     </footer>
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-                navigator.serviceWorker.register('/sw.js').then(function(registration) {
-                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
-                }, function(err) {
-                    console.log('ServiceWorker registration failed: ', err);
-                });
-            });
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

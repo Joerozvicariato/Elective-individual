@@ -1,0 +1,131 @@
+body {
+    background: linear-gradient(to bottom right, #e0e0e0, #ffffff); 
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    position: relative;
+}
+
+header img {
+    max-width: 150px; 
+    height: auto; 
+}
+
+nav {
+    margin: 20px 0;
+    text-align: center; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0; 
+}
+
+nav ul li {
+    display: inline; 
+    margin: 0 15px; 
+}
+
+nav a {
+    background-color: #f2f2f2; 
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none; 
+    color: #333; 
+}
+
+nav a:hover {
+    background-color: #e0e0e0; 
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; 
+}
+
+.highlight {
+    margin: 20px auto; /* Center the highlight section */
+    max-width: 600px; /* Limit the width of the highlight section */
+    text-align: center; /* Center text within the highlight section */
+}
+
+.highlight img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: round the corners of the image */
+}
+
+.shoe-grid {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+}
+
+.shoe {
+    background-color: #f7f7f7; 
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    width: calc(33.333% - 20px); /* Adjust width for three items per row */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; 
+}
+
+.shoe img {
+    width: 100%; /* Make the image take the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Set a maximum height for uniformity */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-radius: 5px; /* Optional: round the corners of the image */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #337ab7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #286090;
+}
