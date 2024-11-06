@@ -1,7 +1,9 @@
 body {
-    background: linear-gradient(to bottom right, #e0e0e0, #ffffff); 
+    /* Updated background with a vibrant gradient */
+    background: linear-gradient(to bottom right, #a8e0ff, #ffffff), 
+                url('https://www.transparenttextures.com/patterns/white-paper.png'); /* Optional: add a subtle texture */
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     color: #333;
 }
 
@@ -10,6 +12,7 @@ header {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.9); 
     position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
 
 header img {
@@ -33,15 +36,16 @@ nav ul li {
 }
 
 nav a {
-    background-color: #f2f2f2; 
+    background-color: #ffcc00; /* Bright yellow for buttons */
     padding: 10px;
     border-radius: 5px;
     text-decoration: none; 
     color: #333; 
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 nav a:hover {
-    background-color: #e0e0e0; 
+    background-color: #e0b800; /* Darker yellow on hover */
 }
 
 main {
@@ -52,7 +56,7 @@ section {
     background-color: rgba(255, 255, 255, 0.9); 
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow for sections */
     margin-bottom: 20px; 
 }
 
@@ -82,6 +86,11 @@ section {
     width: calc(33.333% - 20px); /* Adjust width for three items per row */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     box-sizing: border-box; 
+    transition: transform 0.2s; /* Add transition for hover effect */
+}
+
+.shoe:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 .shoe img {
@@ -119,13 +128,14 @@ form input, form textarea {
 
 form button {
     padding: 10px;
-    background-color: #337ab7;
+    background-color: #337ab7; /* Blue button */
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 form button:hover {
-    background-color: #286090;
-}
+    background-color: #286090; /* Darker blue on hover */
+}       

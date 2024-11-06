@@ -9,7 +9,7 @@
 <body>
     <header>
         <img src="https://i.pinimg.com/originals/c0/2a/14/c02a14ee95c5c32bd8f6bdf02b2a5946.gif" alt="Logo">
-        <h1>Welcome to Shoe  Store!</h1>
+        <h1>Welcome to J Shoe Store!</h1>
     </header>
     <nav>
         <ul>
@@ -21,7 +21,7 @@
     </nav>
     <main>
         <section id="home">
-            <h1>Welcome to Shoe Store!</h1>
+            <h1>Welcome to J Shoe Store!</h1>
             <p>Browse our collection of shoes below.</p>
         </section>
         <section id="shoes">
@@ -31,32 +31,48 @@
                     <img src="https://i.pinimg.com/control/564x/df/66/1d/df661d8275b3f48069c5a576ad79e2f9.jpg" alt="Shoe 1">
                     <h3>Shoe 1</h3>
                     <p>Price: $100</p>
+                    <button class="add-to-cart" data-name="Shoe 1" data-price="100">Add to Cart</button>
                 </div>
                 <div class="shoe">
                     <img src="https://i.pinimg.com/736x/a9/b3/3f/a9b33fcd4866c69e293a1be0f965fae2.jpg" alt="Shoe 2">
                     <h3>Shoe 2</h3>
                     <p>Price: $120</p>
+                    <button class="add-to-cart" data-name="Shoe 2" data-price="120">Add to Cart</button>
                 </div>
                 <div class="shoe">
                     <img src="https://i.pinimg.com/736x/b6/59/80/b659808fb8b92b50bc4b2074dcccf6c7.jpg" alt="Shoe 3">
                     <h3>Shoe 3</h3>
                     <p>Price: $90</p>
+                    <button class="add-to-cart" data-name="Shoe 3" data-price="90">Add to Cart</button>
                 </div>
                 <div class="shoe">
                     <img src="https://i.pinimg.com/564x/40/72/34/407234bb8485964fbad4cdcebc04c761.jpg" alt="Shoe 4">
                     <h3>Shoe 4</h3>
                     <p>Price: $90</p>
+                    <button class="add-to-cart" data-name="Shoe 4" data-price="90">Add to Cart</button>
                 </div>
                 <div class="shoe">
                     <img src="https://i.pinimg.com/564x/47/86/21/478621b93c47eb4e22811b901dd732d0.jpg" alt="Shoe 5">
                     <h3>Shoe 5</h3>
                     <p>Price: $120</p>
+                    <button class="add-to-cart" data-name="Shoe 5" data-price="120">Add to Cart</button>
                 </div>
                 <div class="shoe">
                     <img src="https://i.pinimg.com/736x/05/bc/dd/05bcdd50350076fb41ba53c45bcbdab9.jpg" alt="Shoe 6">
                     <h3>Shoe 6</h3>
-                    <p>Price: $120</p>
+                    <p>Price: $120</p>  
+                    <button class="add-to-cart" data-name="Shoe 6" data-price="120">Add to Cart</button>
+                </div>
             </div>
+        </section>
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <p id="total-price">Total: $0</p>
+        </div>
+        <button id="checkout-btn" disabled>Checkout</button>
+        <div id="checkout-message"></div>
+        <div id="responseMessage"></div>
         </section>
     </main>
     <footer>
