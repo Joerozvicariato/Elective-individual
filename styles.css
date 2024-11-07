@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     /* Updated background with a vibrant gradient */
     background: linear-gradient(to bottom right, #a8e0ff, #ffffff), 
@@ -7,6 +8,7 @@ body {
     color: #333;
 }
 
+/* Header Styles */
 header {
     text-align: center;
     padding: 20px;
@@ -20,9 +22,15 @@ header img {
     height: auto; 
 }
 
+/* Navigation Styles */
 nav {
     margin: 20px 0;
     text-align: center; 
+}
+
+.navbar-nav {
+    justify-content: center; /* Center the nav items */
+    flex-grow: 1; /* Allow the nav items to grow and take available space */
 }
 
 nav ul {
@@ -48,10 +56,12 @@ nav a:hover {
     background-color: #e0b800; /* Darker yellow on hover */
 }
 
+/* Main Content Styles */
 main {
     padding: 20px;
 }
 
+/* Section Styles */
 section {
     background-color: rgba(255, 255, 255, 0.9); 
     padding: 20px;
@@ -60,6 +70,7 @@ section {
     margin-bottom: 20px; 
 }
 
+/* Highlight Section Styles */
 .highlight {
     margin: 20px auto; /* Center the highlight section */
     max-width: 600px; /* Limit the width of the highlight section */
@@ -72,12 +83,14 @@ section {
     border-radius: 5px; /* Optional: round the corners of the image */
 }
 
+/* Shoe Grid Styles */
 .shoe-grid {
     display: flex;
     justify-content: space-around; 
     flex-wrap: wrap; 
 }
 
+/* Shoe Card Styles */
 .shoe {
     background-color: #f7f7f7; 
     padding: 10px;
@@ -101,6 +114,7 @@ section {
     border-radius: 5px; /* Optional: round the corners of the image */
 }
 
+/* Footer Styles */
 footer {
     text-align: center;
     padding: 10px;
@@ -110,6 +124,7 @@ footer {
     width: 100%;
 }
 
+/* Form Styles */
 form {
     display: flex;
     flex-direction: column;
@@ -128,14 +143,14 @@ form input, form textarea {
 
 form button {
     padding: 10px;
-    background-color: #337ab7; /* Blue button */
-    color: white;
-    border: none;
+    background-color: white; /* Changed to white for consistency */
+    color: black; /* Changed text color for contrast */
+    border: 1px solid #ccc; /* Added border for definition */
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 form button:hover {
-    background-color: #286090; /* Darker blue on hover */
-}       
+    background-color: #f0f0f0; /* Light gray on hover for feedback */
+}

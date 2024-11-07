@@ -72,10 +72,18 @@ if (checkoutButton) { // Check if checkoutButton exists
             alert("Your cart is empty!");
             return;
         }
-        const totalAmount = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-        checkoutMessage.textContent = `Checkout successful! Total amount: $${totalAmount.toFixed(2)}`;
-        cart = []; // Clear the cart after checkout
-        updateCart(); // Update the cart display
+
+        // Confirmation message
+        const confirmation = confirm("Are you sure you want to purchase this item?");
+        if (confirmation) {
+            const totalAmount = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            checkoutMessage.textContent = `Thank you for your purchase! Your product has been sent to the supplier. Please wait for delivery confirmation. Total amount: $${totalAmount.toFixed(2)}`;
+            cart = []; // Clear the cart after checkout
+            updateCart(); // Update the cart display
+        } else {
+            // User canceled the checkout
+            checkoutMessage.textContent = "Checkout canceled.";
+        }
     });
 }
 
